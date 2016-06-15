@@ -1,0 +1,291 @@
+/*#ddelivery_pvz{
+	position         : absolute;
+	z-index          : 2100;
+	display          : none;
+	background-color : white;
+	padding          : 10px;
+	overflow         : hidden;
+	font-family             : Arial;
+	width            : 1200px;
+	height           : 543px;
+}*/
+
+#ddelivery_container_place{
+	margin: 0 20px;
+}
+#ddelivery_DDelivery_widget{
+	position         : absolute;
+	z-index          : 2100;
+	background       : white;
+	display: none;
+}
+#ddelivery_DDelivery_widget_top{
+	height: 60px;
+	background: url("image/head-bg.png") repeat;
+	margin-bottom: 20px;
+	padding-left: 30px;
+}
+
+#ddelivery_DDelivery_widget_top p{
+	font-size: 24px !important;
+    color: #fff !important;
+    line-height: 58px !important;
+    padding-right: 25px !important;
+    float: left !important;
+}
+
+#ddelivery_DDelivery_widget_top #ddelivery_DDelivery_widget_close{
+	float: right;
+	width: 29px;
+	height: 29px;
+	background: url("image/close.png") no-repeat 0 -29px;
+	margin: 15px 15px 0 0;
+}
+
+#ddelivery_DDelivery_widget_bottom{
+	height: 6px;
+	background: url("image/bott-bg.png") repeat;
+	margin-top: 40px;
+	position: relative;
+}
+
+#ddelivery_DDelivery_widget_bottom a{
+	display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -95px;
+    top: -24px;
+    height: 24px;
+    line-height: 24px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    width: 190px;
+    background: #75256a;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    -ms-border-radius: 3px 3px 0 0;
+    -o-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    -webkit-box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, 0.3);
+}
+#ddelivery_mask{
+	width            : 100%;
+	height           : 100%;
+	opacity          : 0.8;
+	position         : fixed;
+	z-index          : 2000;
+	background-color : black;
+	display          : none;
+	top              : 0px;
+	padding          : 5px
+}
+#ddelivery_head{
+	height:25px;
+	clear: both;
+	padding-top: 7px;
+}
+#ddelivery_description{
+	/*height: 25px;*/
+	line-height: 25px;
+	font-size: 17px;
+	float: left;
+	color: #7b7b7b;
+}
+#ddelivery_logo{
+	background : url('/bitrix/images/ddelivery.ddelivery2/widjet/logo.png') no-repeat transparent;
+	width      : 169px;
+	height     : 8px;
+	margin-top : 15px;
+	float: right;
+}
+
+#ddelivery_logo:hover{
+	background-position: 0px -9px;
+}
+#ddelivery_logo a{
+	text-decoration : none;
+	width           : 100%;
+	height          : 100%;
+	display         : block;
+}
+#ddelivery_closer{
+	position   : absolute;
+	background : url('/bitrix/images/ddelivery.ddelivery2/widjet/close.png') no-repeat transparent;
+	height     : 22px;
+	width      : 22px;
+	right      : 15px;
+	top        : 15px;
+	z-index    : 1000;
+	cursor     : pointer;
+}
+#ddelivery_DDelivery_widget_confirm{
+	/*background: url("/bitrix/components/ddelivery/ddelivery.ddelivery2Pickup/templates/order/image/head-bg.png") repeat;*/
+	background: #fa9d11;
+	width: 120px;
+	height: 37px;
+	border-radius: 4px;
+	text-align: center;
+    line-height: 34px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    /*margin: 20px auto 0;*/
+	margin-top: 20px;
+	margin-right: 30px;
+	float: right;
+	display: none;
+	cursor: pointer;
+}
+#ddelivery_closer:hover{
+	background-position: 0px -22px;
+}
+#ddelivery_map{
+	float: left;
+	height: 95%;
+	width: 100%;
+}
+#ddelivery_info{
+	float: left;
+    position: relative;
+    height: 430px;
+    overflow: hidden;
+    width: 245px;
+    color: black;
+    top: -480px;
+    left: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #5D5D5D;
+}
+#ddelivery_sign{
+	height: 38px;
+	line-height: 38px;
+	font-size: 14px;
+	padding-left: 98px;
+	background: url('/bitrix/images/ddelivery.ddelivery2/widjet/widjetLogo.png') no-repeat 11px;
+	border-bottom: 1px solid #e3e3e3;
+	background-size: contain;
+}
+.ddelivery_delivInfo{
+	/*height: 72px;*/
+	font-weight: bold;
+	font-size: 12px;
+	border-bottom: 1px dashed #e3e3e3;
+	border-top: 1px dashed #e3e3e3;
+	line-height: 35px;
+	padding: 0px 9px;
+	background-color: #fafafa;
+}
+
+.ddelivery_provider_img{
+	display: inline-block;
+	padding-right: 5px;
+	height: 10px;
+	margin-top: -2px;
+}
+.ddelivery_provider_baloon_img{
+	display: block;
+	position: absolute;
+	height: 14px;
+	top: 5px;
+	left: 5px;
+}
+
+#ddelivery_wrapper{
+	height: 400px;
+	overflow: auto;
+	width: 245px;
+	border: none;
+	outline: none;
+	background-color: #fafafa;
+}
+#ddelivery_wrapper p{
+	cursor : pointer !important;
+	padding: 5px 6px !important;
+	margin:  5px 6px !important;
+	font-size: 12px;
+}
+.ddelivery_chosen{
+	background-color : #ebebeb;
+}
+#ddelivery_ten{
+	position: relative;
+	top: -5px;
+	background-color: white;
+	height: 10px;
+	box-shadow: 0 0 5px 5px white;
+	width: 235px;
+
+	opacity: 0.7;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+    -moz-opacity: 0.7;
+    -khtml-opacity: 0.7;
+}
+/*балун*/
+#ddelivery_baloon{
+	background-color:white;
+	/* width: 258px; */
+	font-family: Arial;
+	font-size: 12px;
+}
+#ddelivery_baloon > div{
+	margin: 10px 0px;
+}
+.ddelivery_baloonDiv a{
+	color: #666666;
+	text-decoration: none;
+	border-bottom:1px dashed #666666;
+}
+.ddelivery_baloonDiv a:hover{
+	border-bottom:1px dashed white;
+}
+.ddelivery_baloonDiv{
+	max-width: 235px;
+	padding-left:8px;
+	float:left;
+	text-align: left;
+}
+.ddelivery_icon{
+	float:left;
+	width:12px;
+	min-height: 12px;
+}
+.ddelivery_iAdress{
+	font-size: 14px;
+}
+.ddelivery_iTelephone{background: url('/bitrix/images/ddelivery.ddelivery2/widjet/phone.png') no-repeat;}
+.ddelivery_iTime{background: url('/bitrix/images/ddelivery.ddelivery2/widjet/clock.png') no-repeat;}
+#ddelivery_button{
+	width:130px;
+	height:25px;
+	background: url('/bitrix/images/ddelivery.ddelivery2/widjet/chooze.png') no-repeat;
+	display: block;
+	margin: auto;
+	text-decoration:none;
+}
+#ddelivery_button:hover{
+	background-position: 0px -25px;
+}
+#ddelivery_head > div{
+	/*font-size: 14px;*/
+	font-family: Arial;
+	/*float:left;*/
+}
+#ddelivery_logoPlace{
+	width: 300px;
+	height: 38px;
+	background-image: url("/bitrix/images/ddelivery.ddelivery2/ddeliveryogo.png");
+	background-repeat:no-repeat;
+	background-position: 241px 2px;
+}
+#ddelivery_separator{
+	background-color: #e3e3e3;
+	width: 1px;
+	height: 38px;
+}
+.ddelivery_mark{
+	margin-left:12px;
+}
